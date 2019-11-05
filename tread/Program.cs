@@ -25,7 +25,7 @@ namespace tread
             Thread.Sleep(500);
             Console.WriteLine("Main Thread");
             string someVariabile = "Matteo Tumiati";
-
+             
             var workerThread = new Thread((o) =>
             {
                 Console.WriteLine($"Saluti da: {someVariabile}");
