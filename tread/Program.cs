@@ -59,7 +59,7 @@ namespace tread
             }
             Console.WriteLine("Esecuzione di tutti i thread terminata");
             //Attesa di massimo un secondo thread.join(1000);
-            Thread workerThread = new Thread(() =>
+             workerThread = new Thread(() =>
             {
                 Console.WriteLine("inizio di un thread molto lungo");
                 Thread.Sleep(5000);
@@ -76,7 +76,7 @@ namespace tread
             }
             Console.WriteLine("Termine applicazione");
 
-            var workerThread = new Thread(() =>
+             workerThread = new Thread(() =>
             {
                 try
                 {
